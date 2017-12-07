@@ -24,7 +24,7 @@ SCENARIO("Sample test") {
     GIVEN("A list of words from a book") {
         Book b;
         WHEN("the words are inserted into a BSTLEAF") {
-            BSTLEAF<std::string,int, compare, equals_function> leaf;
+            cop3530::BSTLEAF<std::string,int, compare, equals_function> leaf;
             std::vector<std::string>::iterator iter = b.begin();
             for(; iter != b.end(); iter++) {
                 try {
@@ -41,7 +41,7 @@ SCENARIO("Sample test") {
         }
 
         WHEN("the words are inserted into a BSTROOT") {
-            BSTROOT<std::string,int, compare, equals_function> leaf;
+            cop3530::BSTROOT<std::string,int, compare, equals_function> leaf;
             std::vector<std::string>::iterator iter = b.begin();
             for(; iter != b.end(); iter++) {
                 try {
@@ -58,7 +58,7 @@ SCENARIO("Sample test") {
         }
 
         WHEN("the words are inserted into a BSTRAND") {
-            BSTRAND<std::string,int, compare, equals_function> leaf;
+            cop3530::BSTRAND<std::string,int, compare, equals_function> leaf;
             std::vector<std::string>::iterator iter = b.begin();
             for(; iter != b.end(); iter++) {
                 try {
@@ -75,7 +75,7 @@ SCENARIO("Sample test") {
         }
 
         WHEN("the words are inserted into an AVL") {
-            AVL<std::string,int, compare, equals_function> leaf;
+            cop3530::AVL<std::string,int, compare, equals_function> leaf;
             std::vector<std::string>::iterator iter = b.begin();
             for(; iter != b.end(); iter++) {
                 try {
