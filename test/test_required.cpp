@@ -29,7 +29,7 @@ SCENARIO("Sample test") {
             for(; iter != b.end(); iter++) {
                 try {
                     leaf.lookup(*iter)++;
-                } catch (std::out_of_range &e) {
+                } catch (std::runtime_error &e) {
                     leaf.insert(*iter, 1);
                 }
             }
@@ -46,7 +46,7 @@ SCENARIO("Sample test") {
             for(; iter != b.end(); iter++) {
                 try {
                     leaf.lookup(*iter)++;
-                } catch (std::out_of_range &e) {
+                } catch (std::runtime_error &e) {
                     leaf.insert(*iter, 1);
                 }
             }
@@ -63,7 +63,7 @@ SCENARIO("Sample test") {
             for(; iter != b.end(); iter++) {
                 try {
                     leaf.lookup(*iter)++;
-                } catch (std::out_of_range &e) {
+                } catch (std::runtime_error &e) {
                     leaf.insert(*iter, 1);
                 }
             }
@@ -80,7 +80,7 @@ SCENARIO("Sample test") {
             for(; iter != b.end(); iter++) {
                 try {
                     leaf.lookup(*iter)++;
-                } catch (std::out_of_range &e) {
+                } catch (std::runtime_error &e) {
                     leaf.insert(*iter, 1);
                 }
             }
