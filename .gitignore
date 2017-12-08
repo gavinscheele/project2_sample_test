@@ -5,3 +5,4 @@ src/AVL.h
 src/BSTLEAF.h
 src/BSTRAND.h
 src/BSTROOT.h
+a.out*
