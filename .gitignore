@@ -6,3 +6,6 @@ src/BSTLEAF.h
 src/BSTRAND.h
 src/BSTROOT.h
 a.out*
+required
+group1
+group2

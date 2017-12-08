@@ -1,8 +1,5 @@
 #include "catch.hpp"
-#include <iostream>
-#include <vector>
 #include <string>
-#include <exception>
 
 #include "../src/BSTLEAF.h"
 #include "../src/BSTROOT.h"
