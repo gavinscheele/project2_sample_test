@@ -24,8 +24,8 @@ group2: test_main.o test_group2.o
 group1: test_main.o test_group1.o
 	$(CC) $(DEBUG_FLAGS) -o group1 test_main.o test_group1.o
 
-required: book.o test_main.o test_required.o
-	$(CC) $(DEBUG_FLAGS) -o required book.o test_main.o test_required.o
+required: Book.o test_main.o test_required.o
+	$(CC) $(DEBUG_FLAGS) -o required Book.o test_main.o test_required.o
 
 test_required.o: test/test_required.cpp
 	$(CC) -c $(DEBUG_FLAGS) $(COMPILE_FLAGS) test/test_required.cpp
@@ -33,7 +33,7 @@ test_required.o: test/test_required.cpp
 test_main.o: test/test_main.cpp
 	$(CC) -c $(DEBUG_FLAGS) $(COMPILE_FLAGS) test/test_main.cpp
 
-book.o: test/book/Book.cpp
+Book.o: test/book/Book.cpp
 	$(CC) -c $(DEBUG_FLAGS) $(COMPILE_FLAGS) test/book/Book.cpp
 
 test_group1.o: test/test_group1.cpp
