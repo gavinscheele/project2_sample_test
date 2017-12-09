@@ -5,7 +5,7 @@
 #include <string>
 
 namespace cop3530 {
-template <typename K, typename V, int (*hash_function)(const K&), bool (*equals_function)(const K&, const K&)>
+template <typename K, typename V, size_t (*hash_function)(const K&), bool (*equals_function)(const K&, const K&)>
 class HASHOPEN {
     public:
     HASHOPEN(size_t capacity) {

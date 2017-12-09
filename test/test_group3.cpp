@@ -4,7 +4,7 @@
 #include "../src/HASHOPEN.h"
 #include "../src/HASHBUCKET.h"
 
-int hash_function(const std::string &key) {
+size_t hash_function(const std::string &key) {
     return 0; // fire hash function
 }
 
